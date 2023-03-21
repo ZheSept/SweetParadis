@@ -1,0 +1,159 @@
+#img#knopka#text
+{
+	position: relative;
+}
+.img{
+   width: 500px;
+   height: 500px;
+   border: 2px solid ;
+   margin: 0 auto;
+   overflow: hidden;
+
+
+   
+}
+.img img{
+	width: 100%;
+	transition: 1s;
+}
+.comanda:hover img{
+filter: blur(8px);
+transform:  scale(1.5);
+
+
+}
+
+
+
+.knopka{
+   width: 100px;
+   height: 100px;
+   margin: 0 auto;
+   margin-top: -80px;
+   position: relative;
+   z-index: 5;
+
+}
+
+
+.knopka button{
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	background: #DC143C;
+	color: Black;
+	cursor: pointer;
+	backdrop-filter: blur(5px);
+    transition: 0.3s ;
+    margin-left: 180px;
+    overflow: hidden;
+
+
+}
+
+button{
+	opacity: 0;
+z-index: 2;
+}
+.comanda:hover button {
+	opacity: 1;
+	background: #DC143C ;
+	backdrop-filter: blur(10px) ;
+	color:black;
+	font-size: 16px;
+	z-index: 2;
+	
+
+}
+
+
+.text {
+	margin-top: -450px;
+	margin-left: 650px;
+	position: absolute;
+	
+	
+  
+    z-index: 3; 
+   }
+
+
+.text h1{
+	opacity: 0;
+	color: white;
+	}
+.text ul{
+	opacity: 0;
+	color:#DC143C;
+}
+.comanda:hover:text {
+	color:#DC143C;
+	padding: 0px 20px 20px 20px ;
+	border: 1px solid;
+    backdrop-filter: blur(10px);
+	opacity: 1;
+	z-index: 3;
+	
+}
+.comanda:hover h1 {
+
+	opacity: 1;
+	transition: 2s;
+	margin-left: 50px;
+	z-index: 3;
+	color:#DC143C;
+	
+}
+.comanda:hover ul {
+	opacity: 1;
+	transition: 3.25s;
+	color:#FFFF;
+	z-index: 3;
+	
+}
+.comanda:after{
+  content: '';
+  width: 500px;
+  height: 500px;
+  opacity: 0%;
+  background-color: black;
+  position: absolute;
+ top:10px;
+  left: 0px;
+  transform: translateX(0);
+  transition: 0.35s;
+z-index:1;}
+
+.comanda:hover:after{
+ transform: translateX(110%) ;
+backdrop-filter: blur(10px);
+opacity: 50%;
+z-index: 1;
+
+}
+.knopka:hover button{
+	transition: 0.75s;
+	background-color: black;
+	color: #DC143C;;
+
+}
+.knopka button:before{
+  content: '';
+  width: 100px;
+  height: 100px;
+  left:-100px ;
+  top: -50px;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, .1),rgba(255,255,255,0.6));
+  position: absolute;
+ transform: skew(-45deg);
+ z-index: 3;
+ transition:0s ;
+
+}
+
+.knopka button:hover:before{
+
+ transition: 3.45s;
+  transform: translateX(300px) skew(-45deg) ;
+ z-index: 3;
+}
